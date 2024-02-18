@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* todos parágrafos */
+p {
+    text-align: justify;
+    font-size: 1em;
+}
+
+/* cabeçalho */
+header {
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
+
+    height: 100px;width: 96vw;
+    background-color: #5D73C3;
+    color: white;
+}
+
+/* navegação  do cabeçalho*/
+header nav {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    column-gap: 10px;
+}
+
+header ul > li {
+    background-color: white;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+header a {
+    text-align: center;
+    display: block;
+    flex-grow: 2;
+    color: black;
+    text-decoration: none;
+}
+
+/* conteúdo principal */
+main#conteudo-principal {
+    display: flex;
+    flex-direction: column;
+
+    background-image: linear-gradient(to bottom, #fff, #DFE6FF, #A6B9FF);
+    max-width: 600px;
+    width: 96vw;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.183);
+    padding: 5px 40px;
+}
+
+/* minha foto */
+div#foto {
+    margin-right: 40px;
+}
+
+/* seção sobre mim */
+section#sobre-mim {
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section#sobre-mim h1 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.167);
+}
+
+/* paragrafo */
+section#sobre-mim p {
+    line-height: 1.8;
+}
+
+/* seção texto do lado da imagem */
+section#texto-lado-imagem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+/* Fale comigo */
+section#fale-comigo {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.167);
+    margin: 40px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+section#fale-comigo h2 {
+    font-size: 1.3em;
+    margin-right: 20px;
+}
+
+/* icones do fale comigo */
+div#icons-fale-cmg {
+    display: flex;
+
+}
+
+section#fale-comigo img {
+    display: flex;
+    border-radius: 50%;
+    background-color: transparent;
+
+}  
+
+section#fale-comigo img.git, .wpp {
+    margin-left: 20px;
+}
+
+/* tecnologias */
+aside section#tecnologias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+    height: 130px;
+    margin: 0 -40px;
+} 
+
+aside section#tecnologias div {
+    width: 60%;
+}
+
+aside section#tecnologias div h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* icones das tecnologias */
+aside section#icons-tec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+aside section#icons-tec img.pad {
+    padding-left: 5vw;
+}
+
+aside section#icons-tec div {
+    margin: 25px -40px;
+}
+
+/* legenda dos icones */
+aside section#icons-tec figure {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside section#icons-tec figcaption {
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+aside section#icons-tec figcaption.leg {
+    padding-left: 5vw;
+}
+
+/* Linha (HR) */
+hr {
+    border: .1px solid rgba(255, 255, 255, 0.436);
+    margin: 0 -40px;
+}
+ 
+/* projetos */
+div#meus-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#meus-projetos h2 {
+    color: white;
+    margin: 40px 0 20px 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.324);
+}
+
+div#meus-projetos ul {
+    line-height: 1.4;
+}
+
+div#meus-projetos a {
+    text-decoration: none;
+    color: black;
+}
+
+div#meus-projetos a:hover {
+    text-shadow: 1px 1px 3px #05187a41;
+    text-decoration: underline;
+    color: #05187a;
+    transition: color .3s, text-shadow .3s, text-decoation .5s;
+}
+
+div#meus-projetos a:active {
+    color: #0520a4;
+}
+
+div#container {
+    width: 400px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0 20px 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.200);
+
+}
+
+/* rodapé */
+footer#rodape-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #000C4A;
+    max-width: 600px;
+    width: 96vw;height: 80px;
+    padding: 5px 40px;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+footer#rodape-principal {
+    font-size: .8em;
+}
