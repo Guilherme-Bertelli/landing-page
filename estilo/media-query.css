@@ -101,7 +101,7 @@ footer#rodape-principal {
     
 /* cabeçalho */
 header {
-    min-width: 992px;
+    min-width: 1000px;
 }
 
 /* navegação  do cabeçalho*/
@@ -114,8 +114,8 @@ header ul {
     column-gap: 10px;
 }
 
-main {
-    min-width: 992px;
+main#conteudo-principal {
+    width: 1200px;
 }
 
 /* seção sobre mim */
@@ -195,7 +195,7 @@ div#container {
 }
 
 footer#rodape-principal {
-    min-width: 992px;
+    min-width: 1000px;
     font-size: 1.1em;
 }
 }
