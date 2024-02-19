@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
 </head>
 <body>
     <header id="cabecalho">
@@ -18,16 +19,15 @@
 
     <main id="conteudo-principal">
         <section id="sobre-mim">
-            <section id="texto-lado-imagem">
+            <div class="linha">
                 <div id="foto">
                     <img src="imagens/minha-foto.png" alt="Minha foto">
                 </div>
                 <section id="texto-sobre-mim">
                     <h1>Sobre mim</h1>
-                    <p class="paragrafo1"> - <strong>Sou Guilherme Henrique,</strong> estudante de Desenvolvimento Web e Programação. Me identifico muito com Front End, mais também gosto muito do lado Back End.</p>
+                    <p class="paragrafo1">- <strong>Sou Guilherme Henrique,</strong> estudante de Desenvolvimento Web e Programação. Me identifico muito com Front End, mais também gosto muito do lado Back End.</p>
                 </section>
-            </section>
-
+            </div>
             <section id="texto-embaixo-imagem">
                 <p class="paragrafo2">- <strong>Atualmente</strong> não trabalho profissionalmente com Programação, pois não tenho muita noção de projetos web. Mas Estou me especializando de forma autodidata, e pretendo iniciar uma faculdade de Engenharia de Software.</p>
             </section>
@@ -44,17 +44,17 @@
 
         <aside id="coisas-que-sei">
             <section id="tecnologias">
-                <img src="imagens/icon-tec.png" alt="">
+                <img src="imagens/icon-tec.png" alt="icone tecnologias">
                 <div>
                     <h2>Algumas coisas que eu sei: </h2>
                     <p>HTML, CSS, JavaScript, Edição
-                    de <br> imagens com GIMP, FIGMA...</p>
+                    de imagens com GIMP, FIGMA...</p>
                 </div>
             </section>
             <section id="icons-tec">
                 <div>
                     <figure>
-                        <img src="imagens/icon-html.png" alt="icone html">
+                        <img src="imagens/icon-html.png" alt="icone html" class="html">
                         <figcaption>HTML</figcaption>
                     </figure>
                     <figure>

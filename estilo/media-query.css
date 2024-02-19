@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    
+/* cabeçalho */
+header {
+    min-width: 600px;
+}
+
+/* navegação  do cabeçalho*/
+header nav {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    column-gap: 10px;
+}
+
+main {
+    min-width: 600px;
+}
+
+/* seção sobre mim */
+section#sobre-mim {
+    display: flex;
+    flex-direction: column;
+}
+
+section#sobre-mim div.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+section#sobre-mim h1 {
+    font-size: 1.7em;
+}  
+
+div#foto {
+    align-self: start;
+}
+
+/* paragrafo */
+section#sobre-mim p {
+    line-height: 1.5;
+}
+
+/* seção texto do lado da imagem */
+section#texto-lado-imagem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/* Fale comigo */
+section#fale-comigo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section#fale-comigo h2 {
+    margin-bottom: 0;
+    font-size: 1.7em;
+}
+
+/* icones do fale comigo */
+div#icons-fale-cmg {
+    display: flex;
+}
+
+aside section#tecnologias div {
+    width: 60%;
+}
+
+aside section#tecnologias img {
+    width: 90px;
+}
+
+aside section#tecnologias div h2 {
+    font-size: 1.7em;
+}
+
+div#meus-projetos h2 {
+    font-size: 2em;
+}
+
+div#container {
+    font-size: 1.5em;
+}
+
+footer#rodape-principal {
+    min-width: 600px;
+    font-size: 1.1em;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+/* cabeçalho */
+header {
+    min-width: 992px;
+}
+
+/* navegação  do cabeçalho*/
+header nav {
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    column-gap: 10px;
+}
+
+main {
+    min-width: 992px;
+}
+
+/* seção sobre mim */
+section#sobre-mim {
+    display: flex;
+    flex-direction: column;
+}
+
+section#sobre-mim div.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+
+section#sobre-mim h1 {
+    font-size: 1.7em;
+}  
+
+main#conteudo-principal {
+    min-width: 992px;
+    background-image: linear-gradient(to bottom, #fff, #e4e2e2, #cccaca);
+}
+
+div#foto {
+    align-self: start;
+}
+
+/* paragrafo */
+section#sobre-mim p {
+    line-height: 1.5;
+}
+
+/* seção texto do lado da imagem */
+section#texto-lado-imagem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/* Fale comigo */
+section#fale-comigo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section#fale-comigo h2 {
+    margin-bottom: 0;
+    font-size: 1.7em;
+}
+
+/* icones do fale comigo */
+div#icons-fale-cmg {
+    display: flex;
+}
+
+aside section#tecnologias div {
+    width: 60%;
+}
+
+aside section#tecnologias img {
+    width: 90px;
+}
+
+aside section#tecnologias div h2 {
+    font-size: 1.7em;
+}
+
+div#meus-projetos h2 {
+    font-size: 2em;
+}
+
+div#container {
+    font-size: 1.5em;
+}
+
+footer#rodape-principal {
+    min-width: 992px;
+    font-size: 1.1em;
+}
+}
+

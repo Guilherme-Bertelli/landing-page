@@ -6,11 +6,14 @@
 }
 
 body {
+    width: 90vw;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
 }
 
 /* todos parágrafos */
@@ -33,6 +36,8 @@ header {
     height: 100px;width: 96vw;
     background-color: #5D73C3;
     color: white;
+
+    transition: .5s;
 }
 
 /* navegação  do cabeçalho*/
@@ -47,7 +52,7 @@ header ul {
 
 header ul > li {
     background-color: white;
-    width: 200px;
+    width: 130px;
     padding: 5px;
     border-radius: 5px;
     list-style-type: none;
@@ -71,31 +76,47 @@ main#conteudo-principal {
     width: 96vw;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.183);
     padding: 5px 40px;
+
+    transition: .5s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 /* minha foto */
 div#foto {
+    display: flex;
+    justify-content: center;
     margin-right: 40px;
+    margin-bottom: 50px;
 }
 
 /* seção sobre mim */
 section#sobre-mim {
-    padding-top: 50px;
+    margin-top: 50px;
 
     display: flex;
     flex-direction: column;
 }
 
 section#sobre-mim h1 {
+    text-align: left;
+    margin-top: 25px;
     margin-bottom: 25px;
     font-weight: bold;
     font-size: 1.5em;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.167);
+}  
+
+div#foto {
+    align-self: center;
 }
 
 /* paragrafo */
 section#sobre-mim p {
     line-height: 1.8;
+}
+  
+section#sobre-mim p.paragrafo1 {
+    margin-bottom: 25px;
 }
 
 /* seção texto do lado da imagem */
@@ -111,12 +132,14 @@ section#fale-comigo {
     margin: 40px 0;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
 }
 
 section#fale-comigo h2 {
     font-size: 1.3em;
     margin-right: 20px;
+    margin-bottom: 25px;
 }
 
 /* icones do fale comigo */
@@ -141,6 +164,7 @@ aside section#tecnologias {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
 
     background-color: white;
     height: 130px;
@@ -151,24 +175,43 @@ aside section#tecnologias div {
     width: 60%;
 }
 
+aside section#tecnologias img {
+    width: 80px;
+}
+
 aside section#tecnologias div h2 {
+    font-size: 1.3em;
     margin-bottom: 10px;
-    font-size: 1.2em;
 }
 
 /* icones das tecnologias */
 aside section#icons-tec {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+
+    padding: 0 10px;
+    margin: 0 -40px;
+}
+
+aside section#icons-tec img.html {
+   margin-top: -7px;
 }
 
 aside section#icons-tec img.pad {
-    padding-left: 5vw;
+    padding-left: 30px;
 }
 
 aside section#icons-tec div {
-    margin: 25px -40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    margin: 25px 0;
 }
 
 /* legenda dos icones */
@@ -186,7 +229,7 @@ aside section#icons-tec figcaption {
 }
 
 aside section#icons-tec figcaption.leg {
-    padding-left: 5vw;
+    padding-left: 30px;
 }
 
 /* Linha (HR) */
@@ -204,7 +247,7 @@ div#meus-projetos {
 
 div#meus-projetos h2 {
     color: white;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 25px 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.324);
 }
 
@@ -229,7 +272,8 @@ div#meus-projetos a:active {
 }
 
 div#container {
-    width: 400px;
+    width: 100%;
+    font-size: 4.5vw;
     margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;
@@ -250,10 +294,12 @@ footer#rodape-principal {
     max-width: 600px;
     width: 96vw;height: 80px;
     padding: 5px 40px;
+
+    transition: .5s;
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 }
 
 footer#rodape-principal {
-    font-size: .8em;
+    font-size: .7em;
 }
